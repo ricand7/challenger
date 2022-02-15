@@ -1,4 +1,4 @@
-
+const  { list } = require('./controllers/taskcontroller');
 // const app = require('express')();
 const bodyParser = require('body-parser');
 
@@ -9,9 +9,6 @@ const port = 3000
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  
-  res.status(200).json({ok: true})
-});
+app.get('/', list);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
