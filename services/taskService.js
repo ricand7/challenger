@@ -1,5 +1,5 @@
 
-const { findAll, addTasks } = require('../models/studentModel');
+const { findAll, addTasks } = require('../models/taskModel');
 
 const listTasks = async () => {
   const tasks = await findAll();
