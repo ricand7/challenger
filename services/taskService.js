@@ -8,15 +8,15 @@ const listTasks = async () => {
 };
 
 const createTask = async (task) => {
-  const { nameTask, status } = task;
+  const { nametask, status } = task;
 
-  if (!nameTask || !status) throw { message: 'Taskname and status are required.' };
+  if (!nametask || !status) throw { message: 'Taskname and status are required.' };
 
   const taskId = await addTasks(task);
 
   return {
     id: taskId,
-    nameTask,
+    nametask,
     status,
   };
 };

@@ -7,9 +7,9 @@ const findAll = async () => {
   return tasks;
 };
 
-const addTasks = async ({ nameTask, status }) => {
+const addTasks = async ({ nametask, status }) => {
   const conn = await connection();
-  const { insertedId } = await conn.collection('tasks').insertOne({ nameTask, status });
+  const { insertedId } = await conn.collection('tasks').insertOne({ nametask, status });
 
   return insertedId;
 };
