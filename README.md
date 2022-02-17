@@ -25,6 +25,8 @@ Ficara assim:
     "start": "node index.js"
   },
 
+## Preparando o Banco
+
 
 2 - npm i express mongodb
 
@@ -42,7 +44,7 @@ use(database);
 db.createCollection(collection);
 
 
-5 - Abra outro Playground cole e execute estes comandos e clique para executar. 
+5 - Abra outro Playground cole e execute estes comandos. 
 
 const database = 'challenger';
 
@@ -53,3 +55,7 @@ db.tasks.insertOne([
   ])
 
 6 -  No terminal execute npm start
+
+
+7 - Testes 
+npm install -D mocha chai chai-http sinon mongodb-memory-server@6

@@ -14,3 +14,5 @@ app.get('/tasks', list);
 app.post('/tasks/new', registerTask);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+module.exports = app;

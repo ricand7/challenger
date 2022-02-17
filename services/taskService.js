@@ -10,7 +10,7 @@ const listTasks = async () => {
 const createTask = async (task) => {
   const { nametask, status } = task;
 
-  if (!nametask || !status) throw { message: 'Taskname and status are required.' };
+  if (!nametask || !status) return { message: 'Taskname and status are required.' };
 
   const taskId = await addTasks(task);
 
